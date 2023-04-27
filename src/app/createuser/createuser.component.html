@@ -69,7 +69,8 @@
   <div  > 
   
       <button type="submit" style='margin-bottom:16px' class="btn btn-success"  
-      
+      [disabled]="name.errors?.['required']  || emailId.errors?.['required'] || file.errors?.['required'] 
+        || (!filenamecheck) "
 
       >Submit</button></div> 
     </form>
